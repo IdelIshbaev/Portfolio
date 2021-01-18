@@ -1,0 +1,144 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+/*flexbox*/
+.flex{
+	display: flex;
+
+}
+.jc_sb{
+	justify-content: space-between;;
+}
+.jc_c{
+	justify-content: center;
+}
+.ai_c{
+	align-items: center;
+}
+.fd_c{
+	flex-direction: column;
+}
+
+.home{
+	height: 100%;
+	background: url(../imgs/programmatie.jpg)  center no-repeat;
+  	background-size: cover;
+	filter: brightness(0.4) grayscale(50%);
+	position: relative;
+}
+#greeting{
+	color: rgba(256,256,256,1);	
+	position: relative;
+	top:-70%;
+	margin-bottom: -148px;
+}
+a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
+}
+
+.header{
+	background-image: linear-gradient(to right, rgba(47, 69, 80, 1), rgba(184, 219, 217, 1));
+	position:relative;
+	top:-38px;
+	margin-bottom: -38px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top: 5px;
+}
+.header_links a{
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: all 0.3s ease;
+}
+
+.header_links a:hover{
+	padding: 10px;
+	background: rgba(244, 244, 249, 0.5);
+	border-radius: 5px;
+}
+.logo{
+	font-size: 2em;
+}
+.header_links{
+	font-size: 1.5em;
+}
+
+
+@media screen and (max-width:775px){
+    .hide-for-mobile{
+        display: none;
+    }
+}
+@media screen and (min-width:776px){
+    .hide-for-desktop{
+        display: none;
+    }
+}
+
+.menu span{
+	display: block;
+	width: 26px;
+	height: 2px;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: all 0.3s ease;
+	transform-origin: 3px 1px;
+}
+.menu span:not(:last-child){
+	margin-bottom: 5px;
+}
+.open span:first-child{
+	transform: rotate(45deg);
+}
+.open span:nth-child(2){
+	opacity: 0;
+}
+.open span:last-child{
+	transform: rotate(-45deg);
+}
+.back{
+	margin-top: 58px;
+	min-height: 100%;
+	position: relative;
+	/*background-color: grey;*/
+}
+.noOverlay{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	/*background: red;*/
+	background-image:linear-gradient(rgba(240, 240, 240, 1), rgb(255, 255, 255, 0.75));
+ 	opacity: 0;
+ 	transition:opacity 0.5s ease;
+
+}
+.overlay{
+	opacity: 1;
+}
+
+.mobileMenu{
+	/*margin-top: 70px;*/
+	margin-top: 15px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	display: none;
+	position: fixed;
+	background: white;
+	border-radius: 3px;
+	width: 90%;	
+	left: 50%;
+	transform: translateX(-50%);
+}
+.mobileMenu a{
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+.show-mobile-menu{
+	display: block;
+}
