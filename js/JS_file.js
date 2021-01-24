@@ -1,20 +1,12 @@
 function hamburgerTransform(){
 	btn = document.getElementById("hamburgerBTN");
-	mobileMenu = document.getElementById("mobileMenu");
 	overlay = document.getElementById("overlay");
+	body = document.body;
 
-	if( btn.classList.contains('open')){
-		btn.classList.remove('open');
-		mobileMenu.classList.remove('show-mobile-menu');
+	
+	btn.classList.toggle('open');
+	overlay.classList.toggle('show-mobile-menu')
+	body.classList.toggle('overflow-hidden')
 
-	} else {
-		btn.classList.add('open');
-		mobileMenu.classList.add('show-mobile-menu');
-	}
 
-	if( overlay.classList.contains('overlay')){
-		overlay.classList.remove('overlay');
-	} else {
-		overlay.classList.add('overlay');
-	}
 }

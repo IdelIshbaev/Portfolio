@@ -99,46 +99,38 @@ a{
 .open span:last-child{
 	transform: rotate(-45deg);
 }
-.back{
-	margin-top: 58px;
-	min-height: 100%;
-	position: relative;
-	/*background-color: grey;*/
-}
-.noOverlay{
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-	/*background: red;*/
-	background-image:linear-gradient(rgba(240, 240, 240, 1), rgb(255, 255, 255, 0.75));
- 	opacity: 0;
- 	transition:opacity 0.5s ease;
 
-}
+/* Mobile menu open*/
 .overlay{
-	opacity: 1;
-}
-
-.mobileMenu{
-	/*margin-top: 70px;*/
-	margin-top: 15px;
-	padding-bottom: 15px;
-	padding-top: 15px;
 	display: none;
 	position: fixed;
-	background: white;
-	border-radius: 3px;
-	width: 90%;	
-	left: 50%;
-	transform: translateX(-50%);
-}
-.mobileMenu a{
-	display: block;
-	padding: 10px;
-	text-align: center;
+	top: 38px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-image:linear-gradient(rgba(240, 240, 240, 1), rgb(255, 255, 255, 0.75));
 }
 .show-mobile-menu{
 	display: block;
 }
+
+.mobile-menu{
+	padding: 20px;
+}
+.mobile-menu a{
+	display: block;
+	text-align: center;
+	padding: 5px;
+	font-size: 1.5rem;
+	background-color: white;
+}
+.mobile-menu a:first-child {
+	padding-top: 20px;
+}
+.mobile-menu a:last-child {
+	padding-bottom: 20px;
+}
+.overflow-hidden{
+	overflow: hidden;
+}
+
