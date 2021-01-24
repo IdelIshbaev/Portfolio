@@ -17,7 +17,17 @@ function hamburgerTransform(){
 		overlay.classList.remove('fade-in')
 		overlay.classList.add('fade-out')
 	}
-
-
 }
+window.onload = function () {
+	window.onscroll = function() {myFunction()};
+	header = document.getElementById("myHeader");
+	sticky = header.offsetTop;
 
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+	    header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+	  }
+	}
+}
