@@ -22,11 +22,14 @@ window.onload = function () {
 	window.onscroll = function() {myFunction()};
 	header = document.getElementById("myHeader");
 	sticky = header.offsetTop;
+	body = document.body;
 
 	function myFunction() {
 	  if (window.pageYOffset > sticky) {
+	  	body.classList.add("padding")
 	    header.classList.add("sticky");
 	  } else {
+	  	body.classList.remove("padding")
 	    header.classList.remove("sticky");
 	  }
 	}
