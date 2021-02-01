@@ -36,7 +36,11 @@ html, body{
 	top:-70%;
 	margin-bottom: -148px;
 }
-a{
+.header a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
+}
+.overlay a{
 	text-decoration: none;
 	color: rgba(0, 0, 0, 1);
 }
@@ -48,6 +52,7 @@ a{
 	padding-left:5px;
 	padding-right:5px;
 }
+
 .header_links a{
 	padding-left: 15px;
 	padding-right: 15px;
@@ -67,13 +72,16 @@ a{
 	font-size: 3vh;
 }
 
-
-@media screen and (max-width:904px){
+.header nav a img{
+	width: 4vh;
+}
+@media screen and (max-width:775px){
     .hide-for-mobile{
         display: none;
     }
+
 }
-@media screen and (min-width:905px){
+@media screen and (min-width:776px){
     .hide-for-desktop{
         display: none;
     }
@@ -185,4 +193,90 @@ a{
 .padding{
 	padding-top: 5vh;
 }
+
+/*styling the content*/
+/* https://manparvesh.com */
+/*SKILLS*/
+.content{
+	padding-top: 5vh;
+}
+.content h2{
+	text-align: center;
+	font-size: 7vh;
+	padding-top: 0px;
+	margin-top: 0;
+}
+.content a{
+	/*text-decoration: none;*/
+	text-decoration-line: none
+}
+.each_skill div{
+	width: 20vw;
+}
+
+@media screen and (max-width:775px){
+	.each_skill{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.each_skill div img{
+		width: 20vw;
+	}
+
+}
+@media screen and (min-width:776px){
+    .each_skill{
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+    	text-align: center;
+    }
+    .each_skill div img{
+		width: 15vw;
+	}
+}
+
+/*ABOUT ME*/
+.about{
+	background: rgba(110, 110, 110, 0.2);
+}
+@media screen and (max-width:775px){
+	.content{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.text{
+		font-size: 1.5rem;
+	}
+	.about div{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.about div div img{
+		width: 75vw;
+		border-radius: 75px;
+	}
+
+}
+@media screen and (min-width:776px){
+	.content{
+		padding-left: 20vw;
+		padding-right: 20vw;
+	}
+	.text{
+		width: 25vw;
+		font-size: 2vw;
+	}
+	.about div div img{
+		width: 25vw;
+		border-radius: 75px;
+	}
+	.about div{
+		flex-direction: row-reverse;
+		justify-content: space-around;
+	}
+
+}
+
 
