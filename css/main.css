@@ -36,6 +36,7 @@ html, body{
 	top:-70%;
 	margin-bottom: -148px;
 }
+
 .header a{
 	text-decoration: none;
 	color: rgba(0, 0, 0, 1);
@@ -44,6 +45,7 @@ html, body{
 	text-decoration: none;
 	color: rgba(0, 0, 0, 1);
 }
+
 
 .header{
 	background-image:linear-gradient(rgba(28, 28, 28, 1), rgb(110, 110, 110, 1));
@@ -197,41 +199,42 @@ html, body{
 /*styling the content*/
 /* https://manparvesh.com */
 /*SKILLS*/
-.content{
-	padding-top: 5vh;
-}
+
 .content h2{
 	text-align: center;
-	font-size: 7vh;
-	padding-top: 0px;
-	margin-top: 0;
+	font-size: 6vh;
+	padding-top: 0;
+	margin-top: 0;	
+	margin-bottom: 0;
 }
 .content a{
 	/*text-decoration: none;*/
 	text-decoration-line: none
 }
-.each_skill div{
+.each_img div{
 	width: 20vw;
 }
 
 @media screen and (max-width:775px){
-	.each_skill{
+	.each_img{
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+		font-size: 3vh;
 	}
-	.each_skill div img{
+	.each_img div img{
 		width: 20vw;
 	}
 
 }
 @media screen and (min-width:776px){
-    .each_skill{
+    .each_img{
     	flex-wrap: wrap;
     	justify-content: space-around;
     	text-align: center;
+    	font-size: 3vh;
     }
-    .each_skill div img{
+    .each_img div img{
 		width: 15vw;
 	}
 }
@@ -244,6 +247,7 @@ html, body{
 	.content{
 		padding-left: 20px;
 		padding-right: 20px;
+		padding-top: 7vh;
 	}
 	.text{
 		font-size: 1.5rem;
@@ -257,12 +261,27 @@ html, body{
 		width: 75vw;
 		border-radius: 75px;
 	}
+	.content h2{
+		padding-bottom: 3vh;
+	}
 
 }
 @media screen and (min-width:776px){
 	.content{
+		padding-top: 7vh;
 		padding-left: 20vw;
 		padding-right: 20vw;
+		height: 93vh;
+	}
+	.content.contact{
+		height: 83vh;
+	}
+	.main_content{
+		height: 87vh;
+		align-items: center;
+	}
+	.contact .main_content{
+		height: 77vh;
 	}
 	.text{
 		width: 25vw;
@@ -276,7 +295,13 @@ html, body{
 		flex-direction: row-reverse;
 		justify-content: space-around;
 	}
-
 }
-
-
+footer{
+	width: 100vw;
+	height: 10vh;
+	background-image:linear-gradient(rgb(110, 110, 110, 1), rgba(28, 28, 28, 1));
+	font-size: 2vh;
+	color: rgba(255, 255, 255, 0.5);
+}
+/*footer div div{
+}*/
